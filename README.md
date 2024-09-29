@@ -1,5 +1,5 @@
 # AES (Advanced Encryption Standard)
-AES  is a symmetric encryption algorithm widely used for secure data transmission. In this project, I implemented both encryption and decryption processes using AES, ensuring confidentiality by converting plaintext into ciphertext and back into plaintext.
+AES  is a symmetric encryption algorithm widely used for secure data transmission. In this project, I implemented both encryption and decryption processes using AES, ensuring confidentiality by converting plaintext into ciphertext and back into plaintext. key size 128bits.
 
 # Basic modules
 ## Sub Bytes
