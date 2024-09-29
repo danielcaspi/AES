@@ -6,7 +6,8 @@ AES  is a symmetric encryption algorithm widely used for secure data transmissio
 The SubBytes step in AES is a non-linear byte substitution that uses an S-box to replace each byte of the state with its corresponding value. 
 
 SBox table:
-![AES S-Box (Rijndael S-Box) 16 . | Download Scientific Diagram](https://www.researchgate.net/publication/318906543/figure/fig4/AS:790611112251395@1565507786848/AES-S-Box-Rijndael-S-Box-16.jpg)
+![image](https://github.com/user-attachments/assets/c8f10831-7c10-42f5-8ff2-5ea3693c4d66)
+
 
 ## Shift Rows
 hiftRows is a step in AES where rows of the state matrix are cyclically shifted.
