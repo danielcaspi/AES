@@ -32,11 +32,13 @@ Key Expansion in AES generates a series of round keys from the original encrypti
 
 In this project, I chose an **Unfolded not pipelined** implementation, where all rounds of encryption or decryption are performed in parallel without iteration. This approach maximizes speed by reducing the need for looping or iteration at the cost of using more space.
 
-**Advantages**: Significantly faster execution due to parallel processing of all rounds. **Disadvantages**: Requires more hardware resources, making it less space-efficient.
+**Advantages**: Significantly faster execution due to parallel processing of all rounds.
+
+**Disadvantages**: Requires more hardware resources, making it less space-efficient.
 
 ![image](https://github.com/user-attachments/assets/f53d84e2-044c-4712-9d8a-4ca42854f6c7)
 
-
+## Decryption
 Decryption in AES reverses the encryption process, using the same expanded keys generated during key expansion. It includes modules like InvSubBytes, which reverses the byte substitution using the inverse S-box, InvShiftRows to restore the original row positions, and InvMixColumns to reverse the column mixing transformation. These operations work in reverse order compared to encryption, effectively recovering the original plaintext. We implement this decryption process as shown in the following image.
 
 ![image](https://github.com/user-attachments/assets/00133cd9-3034-4e0f-81ab-1a5a1ffeb97e)
