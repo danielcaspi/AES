@@ -9,7 +9,7 @@ genvar i;
 generate
     for(i=0;i<31;i=i+8)         // temp = colum * 2
     begin
-        assign temp[i+7:i] = colum[i+7] ? (colum[i+7:i] << 1) : {(colum[i+7:i] << 1)^8'h1b};
+      assign temp[i+7:i] = (!colum[i+7]) ? (colum[i+7:i] << 1) : {(colum[i+7:i] << 1)^8'h1b};
     end
 endgenerate
 // colum[i]*3 = temp[i]^colum[i] => (3 = 2^1)
