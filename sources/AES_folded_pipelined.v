@@ -67,7 +67,7 @@ always@(posedge clk_i)
 begin
     if(round == 4'h9 & !done_o) 
        done_o <= 1'b1; 
-    else if (round == 4'ha & !start_i) 
+    else if (done_o & !start_i) 
        done_o <= 1'b1;
     else                                      
        done_o <= 1'b0;
